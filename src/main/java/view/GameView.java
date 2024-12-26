@@ -60,6 +60,11 @@ public class GameView {
                 tg.putString(0, 19, result);
                 screen.refresh();
                 screen.readInput();
+                screen.clear();
+                printNextPlayer();
+                screen.refresh();
+                screen.readInput();
+
 
                 if (controller.isGameFinished()) {
                     tg.putString(0, 20, "Pressione qualquer tecla para sair.");
@@ -118,10 +123,25 @@ public class GameView {
 
     private void drawGameBoard() {
         controller.getCurrentPlayer().getBoard().drawBoard(tg);
-        tg.setForegroundColor(TextColor.ANSI.YELLOW);
         tg.putString(currentCol * 2 + 1, currentRow + 6, "▶");
         tg.setForegroundColor(TextColor.ANSI.WHITE);
         tg.putString(0, 17, "Jogador atual: " + controller.getCurrentPlayer().getName());
         tg.putString(0, 18, "Use as setas para se mover, Enter para atirar.");
+    }
+    
+    public void printNextPlayer() {
+        String[] msg = {
+            "██████  ██████   ██████  ██   ██ ██ ███    ███  ██████           ██  ██████   ██████   █████  ██████   ██████  ██████  ██ ",
+            "██   ██ ██   ██ ██    ██  ██ ██  ██ ████  ████ ██    ██          ██ ██    ██ ██       ██   ██ ██   ██ ██    ██ ██   ██ ██ ",
+            "██████  ██████  ██    ██   ███   ██ ██ ████ ██ ██    ██          ██ ██    ██ ██   ███ ███████ ██   ██ ██    ██ ██████  ██ ",
+            "██      ██   ██ ██    ██  ██ ██  ██ ██  ██  ██ ██    ██     ██   ██ ██    ██ ██    ██ ██   ██ ██   ██ ██    ██ ██   ██    ",
+            "██      ██   ██  ██████  ██   ██ ██ ██      ██  ██████       █████   ██████   ██████  ██   ██ ██████   ██████  ██   ██ ██"
+        };
+
+        tg.setForegroundColor(TextColor.ANSI.RED);
+
+        for (int i = 0; i < msg.length; i++) {
+            tg.putString(0, i, msg[i]);
+        }
     }
 }

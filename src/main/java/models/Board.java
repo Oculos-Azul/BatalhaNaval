@@ -80,7 +80,6 @@ public class Board {
     }
 
     public void drawBoard(TextGraphics tg) {
-        tg.setForegroundColor(TextColor.ANSI.CYAN);
         for (int i = 1; i < size; i++) {
             for (int j = 1; j < size; j++) {
                 tg.putString(j * 2 + 1, i + 6, grid[i][j]);

@@ -49,7 +49,7 @@ public class Menu {
                 "                                                                                                          "
         };
 
-        tg.setForegroundColor(TextColor.ANSI.YELLOW);
+        tg.setForegroundColor(TextColor.ANSI.BLUE);
 
         for (int i = 0; i < banner.length; i++) {
             tg.putString(0, i, banner[i]);
