@@ -86,3 +86,29 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
 (Eclipse:26787): Gtk-CRITICAL **: 18:57:03.399: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
 
 (Eclipse:26787): Gtk-CRITICAL **: 18:57:03.418: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.453: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.453: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.453: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.454: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.466: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.466: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.467: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+
+(Eclipse:26787): Gtk-CRITICAL **: 20:05:20.467: gtk_box_gadget_distribute: assertion 'size >= 0' failed in GtkScrollbar
+CompileCommand: exclude org/eclipse/jdt/internal/core/dom/rewrite/ASTRewriteAnalyzer.getExtendedRange bool exclude = true
+Dec 25, 2024 8:05:56 PM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider ch.qos.logback.classic.servlet.LogbackServletContainerInitializer of service jakarta.servlet.ServletContainerInitializer in bundle ch.qos.logback.classic
+Dec 25, 2024 8:05:57 PM org.apache.aries.spifly.BaseActivator log
+INFO: Registered provider ch.qos.logback.classic.spi.LogbackServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle ch.qos.logback.classic
+20:05:57.950 [Start Level: Equinox Container: 6eff7983-92d3-46df-b655-3cfe454c7807] DEBUG org.eclipse.jgit.internal.util.ShutdownHook -- register org.eclipse.jgit.util.FS$FileStoreAttributes$$Lambda/0x00007464f81da408@12701b17 with shutdown hook
+20:05:57.950 [Start Level: Equinox Container: 6eff7983-92d3-46df-b655-3cfe454c7807] DEBUG org.eclipse.jgit.internal.util.ShutdownHook -- register org.eclipse.jgit.util.FS$FileStoreAttributes$$Lambda/0x00007464f81da408@12701b17 with shutdown hook
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
